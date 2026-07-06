@@ -12,12 +12,15 @@ const FEEDS = {
     { name: "Reuters", url: "https://feeds.reuters.com/reuters/topNews" },
     { name: "BBC World", url: "https://feeds.bbci.co.uk/news/world/rss.xml" },
   ],
-  arsenal: [
+  transfers: [
     { name: "BBC Sport Arsenal", url: "https://feeds.bbci.co.uk/sport/football/teams/arsenal/rss.xml" },
+    { name: "Sky Sports Transfers", url: "https://www.skysports.com/rss/12040" },
+    { name: "BBC Sport PL", url: "https://feeds.bbci.co.uk/sport/football/premier-league/rss.xml" },
   ],
-  tech: [
-    { name: "Hacker News", url: "https://hnrss.org/frontpage" },
-    { name: "The Verge", url: "https://www.theverge.com/rss/index.xml" },
+  compliance: [
+    { name: "Compliance Week", url: "https://www.complianceweek.com/rss" },
+    { name: "FinExtra", url: "https://www.finextra.com/rss/headlines.aspx" },
+    { name: "RegTech Analyst", url: "https://regtechanalyst.com/feed/" },
   ],
   faith: [
     { name: "Christianity Today", url: "https://www.christianitytoday.com/ct/rss.xml" },
