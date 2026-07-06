@@ -23,6 +23,9 @@ const FEEDS = {
     { name: "ComplyAdvantage", url: "https://news.google.com/rss/search?q=ComplyAdvantage&hl=en-GB&gl=GB&ceid=GB:en" },
     { name: "Moody's Analytics", url: "https://news.google.com/rss/search?q=%22Moody%27s+Analytics%22+compliance+OR+%22Bureau+van+Dijk%22&hl=en-GB&gl=GB&ceid=GB:en" },
     { name: "Acuris / ION", url: "https://news.google.com/rss/search?q=Acuris+Risk+OR+%22ION+Analytics%22+compliance&hl=en-GB&gl=GB&ceid=GB:en" },
+    { name: "Kroll", url: "https://news.google.com/rss/search?q=Kroll+compliance+OR+Kroll+risk&hl=en-GB&gl=GB&ceid=GB:en" },
+    { name: "Dun & Bradstreet", url: "https://news.google.com/rss/search?q=%22Dun+%26+Bradstreet%22+compliance+OR+risk&hl=en-GB&gl=GB&ceid=GB:en" },
+    { name: "Swift", url: "https://news.google.com/rss/search?q=Swift+compliance+OR+Swift+KYC+OR+Swift+sanctions&hl=en-GB&gl=GB&ceid=GB:en" },
   ],
   faith: [
     { name: "Christianity Today", url: "https://www.christianitytoday.com/ct/rss.xml" },
