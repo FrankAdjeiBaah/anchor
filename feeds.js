@@ -18,9 +18,7 @@ const FEEDS = {
     { name: "BBC Sport PL", url: "https://feeds.bbci.co.uk/sport/football/premier-league/rss.xml" },
   ],
   compliance: [
-    { name: "Competitors", url: "https://news.google.com/rss/search?q=LexisNexis+Risk+OR+ComplyAdvantage+OR+%22World-Check%22&hl=en-GB&gl=GB&ceid=GB:en" },
-    { name: "Competitors", url: "https://news.google.com/rss/search?q=%22Dun+%26+Bradstreet%22+OR+Kroll+OR+%22Moody%27s+Analytics%22+compliance&hl=en-GB&gl=GB&ceid=GB:en" },
-    { name: "Competitors", url: "https://news.google.com/rss/search?q=Swift+KYC+OR+Swift+sanctions+OR+%22ION+Analytics%22+compliance&hl=en-GB&gl=GB&ceid=GB:en" },
+    { name: "Competitors", url: "https://news.google.com/rss/search?q=LexisNexis+Risk+OR+ComplyAdvantage+OR+%22World-Check%22+OR+%22Dun+%26+Bradstreet%22+OR+Kroll+OR+%22Moody%27s+Analytics%22+launch+OR+product+OR+partnership&hl=en-GB&gl=GB&ceid=GB:en", limit: 5 },
   ],
   faith: [
     { name: "Christianity Today", url: "https://www.christianitytoday.com/ct/rss.xml" },

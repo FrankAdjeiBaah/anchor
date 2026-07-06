@@ -15,7 +15,7 @@ async function loadFeed(category, source) {
     const res = await fetch(`${RSS_PROXY}${encodeURIComponent(source.url)}`);
     const data = await res.json();
     if (data.status !== "ok") return [];
-    return data.items.slice(0, 5).map(item => ({
+    return data.items.slice(0, source.limit || 5).map(item => ({
       title: decodeHTML(item.title),
       link: item.link,
       source: source.name,
