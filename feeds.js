@@ -18,9 +18,11 @@ const FEEDS = {
     { name: "BBC Sport PL", url: "https://feeds.bbci.co.uk/sport/football/premier-league/rss.xml" },
   ],
   compliance: [
-    { name: "Compliance Week", url: "https://www.complianceweek.com/rss" },
-    { name: "FinExtra", url: "https://www.finextra.com/rss/headlines.aspx" },
-    { name: "RegTech Analyst", url: "https://regtechanalyst.com/feed/" },
+    { name: "LexisNexis Risk", url: "https://news.google.com/rss/search?q=LexisNexis+Risk+Solutions&hl=en-GB&gl=GB&ceid=GB:en" },
+    { name: "LSEG World-Check", url: "https://news.google.com/rss/search?q=Refinitiv+World-Check+OR+LSEG+compliance&hl=en-GB&gl=GB&ceid=GB:en" },
+    { name: "ComplyAdvantage", url: "https://news.google.com/rss/search?q=ComplyAdvantage&hl=en-GB&gl=GB&ceid=GB:en" },
+    { name: "Moody's Analytics", url: "https://news.google.com/rss/search?q=%22Moody%27s+Analytics%22+compliance+OR+%22Bureau+van+Dijk%22&hl=en-GB&gl=GB&ceid=GB:en" },
+    { name: "Acuris / ION", url: "https://news.google.com/rss/search?q=Acuris+Risk+OR+%22ION+Analytics%22+compliance&hl=en-GB&gl=GB&ceid=GB:en" },
   ],
   faith: [
     { name: "Christianity Today", url: "https://www.christianitytoday.com/ct/rss.xml" },
