@@ -48,14 +48,16 @@ async function loadAll() {
   const updatedEl = document.getElementById("last-updated");
   if (btn) { btn.disabled = true; }
 
-  for (const [category, sources] of Object.entries(FEEDS)) {
+  for (const [category] of Object.entries(FEEDS)) {
     const container = document.querySelector(`[data-feed="${category}"]`);
-    container.innerHTML = skeletonHTML();
+    if (container) container.innerHTML = skeletonHTML();
+  }
 
+  await Promise.all(Object.entries(FEEDS).map(async ([category, sources]) => {
     const results = await Promise.all(sources.map(s => loadFeed(category, s)));
     const items = results.flat().sort((a, b) => new Date(b.date) - new Date(a.date));
     renderItems(category, items);
-  }
+  }));
 
   const now = new Date();
   const time = now.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
