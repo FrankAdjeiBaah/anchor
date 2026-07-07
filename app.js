@@ -15,12 +15,16 @@ async function loadFeed(category, source) {
     const res = await fetch(`${RSS_PROXY}${encodeURIComponent(source.url)}`);
     const data = await res.json();
     if (data.status !== "ok") return [];
-    return data.items.slice(0, source.limit || 5).map(item => ({
-      title: decodeHTML(item.title),
-      link: item.link,
-      source: source.name,
-      date: new Date(item.pubDate).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" }),
-    }));
+    const cutoff = source.maxAgeDays ? Date.now() - source.maxAgeDays * 86400000 : null;
+    return data.items
+      .filter(item => !cutoff || new Date(item.pubDate).getTime() > cutoff)
+      .slice(0, source.limit || 5)
+      .map(item => ({
+        title: decodeHTML(item.title),
+        link: item.link,
+        source: source.name,
+        date: new Date(item.pubDate).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" }),
+      }));
   } catch {
     return [];
   }
