@@ -18,12 +18,12 @@ const FEEDS = {
     { name: "BBC Sport PL", url: "https://feeds.bbci.co.uk/sport/football/premier-league/rss.xml" },
   ],
   compliance: [
-    { name: "LexisNexis Risk", url: "https://news.google.com/rss/search?q=%22LexisNexis+Risk%22+product+OR+launch+OR+partnership&hl=en-GB&gl=GB&ceid=GB:en", limit: 2, maxAgeDays: 30 },
-    { name: "ComplyAdvantage", url: "https://news.google.com/rss/search?q=ComplyAdvantage+product+OR+launch+OR+partnership&hl=en-GB&gl=GB&ceid=GB:en", limit: 2, maxAgeDays: 30 },
+    { name: "LexisNexis Risk", url: "https://news.google.com/rss/search?q=%22LexisNexis+Risk%22&hl=en-GB&gl=GB&ceid=GB:en", limit: 2, maxAgeDays: 30 },
+    { name: "ComplyAdvantage", url: "https://news.google.com/rss/search?q=ComplyAdvantage&hl=en-GB&gl=GB&ceid=GB:en", limit: 2, maxAgeDays: 30 },
     { name: "World-Check", url: "https://news.google.com/rss/search?q=%22World-Check%22+OR+%22LSEG+compliance%22&hl=en-GB&gl=GB&ceid=GB:en", limit: 2, maxAgeDays: 30 },
     { name: "Moody's / BvD", url: "https://news.google.com/rss/search?q=%22Moody%27s+Analytics%22+compliance+OR+%22Bureau+van+Dijk%22&hl=en-GB&gl=GB&ceid=GB:en", limit: 2, maxAgeDays: 30 },
-    { name: "Kroll", url: "https://news.google.com/rss/search?q=Kroll+compliance+OR+Kroll+risk+product&hl=en-GB&gl=GB&ceid=GB:en", limit: 1, maxAgeDays: 30 },
-    { name: "Dun & Bradstreet", url: "https://news.google.com/rss/search?q=%22Dun+%26+Bradstreet%22+compliance+OR+risk&hl=en-GB&gl=GB&ceid=GB:en", limit: 1, maxAgeDays: 30 },
+    { name: "Kroll", url: "https://news.google.com/rss/search?q=%22Kroll%22+compliance+OR+risk&hl=en-GB&gl=GB&ceid=GB:en", limit: 1, maxAgeDays: 30 },
+    { name: "Dun & Bradstreet", url: "https://news.google.com/rss/search?q=%22Dun+%26+Bradstreet%22&hl=en-GB&gl=GB&ceid=GB:en", limit: 1, maxAgeDays: 30 },
   ],
   faith: [
     { name: "Christianity Today", url: "https://www.christianitytoday.com/ct/rss.xml" },

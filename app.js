@@ -17,7 +17,11 @@ async function loadFeed(category, source) {
     if (data.status !== "ok") return [];
     const cutoff = source.maxAgeDays ? Date.now() - source.maxAgeDays * 86400000 : null;
     return data.items
-      .filter(item => !cutoff || new Date(item.pubDate).getTime() > cutoff)
+      .filter(item => {
+        if (!cutoff) return true;
+        const t = new Date(item.pubDate.replace(" ", "T")).getTime();
+        return !isNaN(t) && t > cutoff;
+      })
       .slice(0, source.limit || 5)
       .map(item => ({
         title: decodeHTML(item.title),
